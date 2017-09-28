@@ -1,14 +1,40 @@
 @charset "utf-8";
 /* CSS Document */
-/****
-@keyframes fondo {
-    0%   {background-image:url(img/fondo1a.jpg);}
-    25%  {background-image:url(img/fondo2.jpg);}
-    50%  {background-image:url(img/fondo1a.jpg);}
-    100% {background-image:url(img/fondo1.jpg);}
-}
-***/
 
+@-moz-keyframes fondo {
+    25%   {background-image:url(img/fondoa.jpg);}
+    50%  {background-image:url(img/fondob.jpg);}
+    75%  {background-image:url(img/fondoc.jpg);}
+    100% {background-image:url(img/fondod.jpg);}
+}
+
+@-webkit-keyframes fondo {
+    25%   {background-image:url(img/fondoa.jpg);}
+    50%  {background-image:url(img/fondob.jpg);}
+    75%  {background-image:url(img/fondoc.jpg);}
+    100% {background-image:url(img/fondod.jpg);}
+}
+
+@keyframes fondo {
+    25%   {background-image:url(img/fondoa.jpg);}
+    50%  {background-image:url(img/fondob.jpg);}
+    75%  {background-image:url(img/fondoc.jpg);}
+    100% {background-image:url(img/fondod.jpg);}
+}
+
+
+@-moz-keyframes flecha {
+   from {top: -100%;}
+    to {top: 100%;}
+}
+@-webkit-keyframes flecha {
+   from {top: -100%;}
+    to {top: 100%;}
+}
+@keyframes flecha {
+    from {top: -100%;}
+    to {top: 100%;}
+}
 
 
 *{
@@ -23,12 +49,17 @@
 /******************************home***************************************/
 
 #home{
-	background-image:url(img/fondo1a.jpg);
+	background-color:#333;
+	background-attachment:fixed;
 	background-size:cover;
+	background-position: center;
 	height:100vh;
-	 animation-name: fondo;
-    animation-duration: 32s;
-	animation-play-state:running;
+    -webkit-animation: fondo 15s infinite;
+	-moz-animation: fondo 15s infinite;
+    animation: fondo 15s infinite;
+	-webkit-transition: background-image 5s;
+	-moz-transition: background-image 5s;
+	transition: background-image 5s;
 }
 .todo{
 	width:85%;
@@ -46,41 +77,63 @@
 #fondoHeader{
 	width:100%;
 	position:fixed;
+	z-index: 100;
 }
 header{
 	width:85%;
 	margin-left: calc((100% - 85%)/2);
 	padding-bottom:10px;
 }
-#carrito{
+.carritocomp{
 	margin-top:10px;
 	float:right;
-	width:300px;
+	width: 600px;
 }
-#carrito p, #carrito h4{
+
+.ingreg{
+	float: left;
+	padding-right: 40px;
+	padding-top: 15px;
+}
+.ingreg:hover{
+	
+}
+
+.carritocomp p, .carritocomp h4{
 	float:right;
 	color:#FFF;
 }
-#carrito p{
-	font-size:11px;
+.carritocomp p{
+	font-size:12px;
 	font-weight:600;
 }
-#carrito h4{
+.carritocomp p:hover{
+	color: #0FF;
+}
+.carritocomp h4{
 	font-size:25px;
 	font-weight:200;
 }
-#carrito img{
+.carritocomp img{
 	width:25px;
 	float:right;
 	margin-right:10px;
 }
-#logo{
+.logo{
 	float:left;
 	width:20%;
 	margin-top:20px;
+	position: relative;
+	margin-top: -40px;
 }
-#logo img{
+.logo img{
 	width:100%;
+}
+#navcel{
+	display: none;
+}
+.btnnav{
+	display: none;
 }
 nav{
 	float:right;
@@ -110,6 +163,7 @@ nav h3{
 	visibility:hidden;
 	font-weight:300;
 	position:relative;
+	line-height:15px;
 }
 a{
 text-decoration:none; 
@@ -155,7 +209,13 @@ nav li:hover h3{
 	background-image:url(img/icreghover.png);
 }
 /*************buscar*****************/
-
+#busqueda .logo{
+	width:40%;
+	margin-top:-40px;
+	margin: auto;
+	padding-left: 30%;
+	display: none;
+}
 #busqueda{
 	margin:auto;
 	width:70%;
@@ -166,6 +226,7 @@ nav li:hover h3{
 	color:#FFF;
 	padding-top:10%;
 	font-weight:100;
+	font-size: 36px;
 }
 #parabuscar{
 	margin-top:20px;
@@ -224,6 +285,9 @@ nav li:hover h3{
 	float:right;
 }
 /*************numeros de servicios*****************/
+.mascel{
+	display: none;
+}
 #numeros{
 	width:80%;
 	margin:auto;
@@ -284,7 +348,7 @@ nav li:hover h3{
 .ofertadia{
 		width: calc(100% /3);
 		float:left;
-		margin-top:20px;
+		margin-bottom:20px;
 		padding-top:10px;
 }
 .ofertadia:hover{
@@ -344,12 +408,82 @@ nav li:hover h3{
 	 margin:auto;
 	 float:left;
 }
+.logo3{
+	margin:auto;
+	width:200px;
+	padding:20px;
+}
+.logo3 img{
+	width:100%;
+}
+.formregistro{
+	width:40%;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:40px;
+	padding-bottom:40px;
+	background:#333;
+	margin:auto;
+}
+.formregistro h2{
+	color: #0FF;
+	font-size: 25px;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 25px;
+	}
+.formregistro li{
+	float:left;
+	width:50%;
+	margin-bottom:20px;
+}
+.formregistro label{
+	width:90%;
+	margin-right:10px;
+	color: #0FF;
+	font-size: 11px;
+	font-weight: 100;
+	text-align: center;
+}
+.formregistro input{
+	width:90%;
+	margin-right:10px;
+	height: 30px;
+}
+.check label{
+	width:30%;
+	margin-right:0px;
+	color: #0FF;
+	font-size: 9px;
+	font-weight: 100;
+	text-align: left;
+	color: #FFF;
+}
+.check input{
+	background-color: red;
+	width: auto;
+	float: left;
+	width:10%;
+	margin-right:10px;
+}
+.crearcuenta{
+	background-color: #111;
+	color: #0FF;
+	height: 80px;
+}
+.crearcuenta:hover{
+	background-color: #0FF;
+	color: #111;
+}
 /******************************FOOTER***************************************/
+#titulofooter{
+	display:none;
+}
 footer{
 	background:#0FF;
 	padding-bottom:30px;
-	padding-top:30px;
-	margin-top:20px;
+	padding-top:50px;
+	margin-top:0px;
 }
 
 .contenedor{
@@ -445,12 +579,6 @@ footer p{
 	padding-bottom:30px;
 	margin-bottom:20px;
 }
-#redes{
-	width: calc(100% /3);
-	height:40px;
-	float:left;
-}
-
 #parabuscarfooter{
 	margin-top:20px;
 	margin-bottom:20px;
@@ -479,74 +607,442 @@ footer p{
 	background-position:center;
 	background-repeat:no-repeat;
 }
-
-#redes img{
-	width: calc(100% /10);
-	padding-right:calc((100% /10)/2);
-	padding-left:calc((100% /10)/2);
+.redes{
+	width: calc(100% /3);
 	float:left;
+	padding:0;
+	margin:0;
 }
-/***************
-@media only screen and (min-width : 992px ) { 
+.redes img{
+	width: calc(100% /8);
+	padding-right:calc((100% /8)/2);
+	padding-left:calc((100% /8)/2);
+	float:left;
+	margin:0;
 }
 
 
-@media only screen and (min-width : 768px ) { 
+/***********************************************************************************************************************************/
+@media only screen and (max-width: 992px) { 
+	.logo{
+		padding-top: 25px;
+	}
+	.iconos{
+	width:60px;
+	height:60px;
+	}
+	.carritocomp{
+		width: 80%;
+	}
+	.carrito p{
+		width: calc(100% /3);
+		text-align: right;
+	}
+	.ingreg{
+		padding-left: 20px;
+	}
+	.ingreg p{
+		text-align: left;
+	}
+	nav{
+	width:80%;
+	}
+	nav li{
+		width: calc(100% /6);
+	}
+	#busqueda{
+	width:90%;
+	}
+	#numeros{
+		width: 100%;
+	}
+	.ofertadia{
+		width: 50%;
+		margin-top:10px;
+		padding-top:10px;
+}
+}
+
+/***********************************************************************************************************************************/
+@media only screen and (max-width: 768px) { 
+	#home{
+	
+	}
+	nav{
+	width:100%;
+	}
+	nav li{
+		width: calc(100% /6);
+	}
+	nav h3{
+	font-size:8,5px;
+	padding-top: 10px;
+	}
+	.carritocomp{
+		width: 100%;
+	}
+	#busqueda{
+	width:95%;
+	padding-bottom: 60px;
+	}
+	.logo{
+		display: none;
+	}
+	#busqueda .logo{
+	display: block;
+	width:50%;
+	float:none;
+	margin:auto;
+	padding: 0;
+	padding-top: 30px;
+	}
+	#busqueda h1{
+	padding-top:4%;
+	}
+	#numeros{
+		display: none;
+	}
+
+	.contenedor h1{
+	margin-top:10px;
+	float: none;
+}
+.contenedor #finaliza{
+	float: none;
+	font-size:21px;
+	float:left;
+	margin-bottom:-30px;
+}
+
+.contenedor img{
+	visibility:hidden;
+}
+
+
+.imgofertadia{
+	width:95%;
+	height:100px;
+}
+.ofertadia h3{
+	width:95%;
+	margin:auto;
+	text-align:center;
+	margin-top:10px;
+	color:#666;
+	font-size:16px;
+}
+footer nav{
+	display:none;
+}
+
+#textofooter{
+	padding-top:0px;
+	margin-top:0px;
+		padding-bottom:0px;
+		margin-bottom:0;
+}
+footer p{
+	font-size:11px;
+	width: calc(100% /2);
+	float:left;
+		margin-top:50px;
+		padding-bottom:0px;
+		margin-bottom:0;
+}
+#parabuscarfooter{
+	margin-top:0px;
+	padding-bottom:20px;
+	width: 70%;
+	float:none;
+	position:absolute;
+	margin:auto;
+	margin-left:calc(15% /2);
+}
+#buscar2{
+	width:75%;
+	float:left;
+	height:30px;
+}
+#lupa2{
+	background:#333 url(img/lupa.png);
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:30px;
+	width:20%;
+	float:right;
+}
+#titulofooter{
+	display:block;
+	text-align:center;
+}
+.redes{
+	width: 60%;
+	float:none;
+	display:block;
+	height:100px;
+	position:static;
+	margin:auto;
+}
+.redes img{
+	width: calc(100% /8);
+	padding-right:calc((100% /8)/2);
+	padding-left:calc((100% /8)/2);
+	float:left;
+	margin:0;
+	position:static;
+	display:block;
+	visibility:visible;
+	opacity:1;
+	margin-top:40px;
+}
 
 }
+
+/***********************************************************************************************************************************/
 
 @media only screen and (max-width : 480px ) {
-
-.todo{
-	width:85%;
+	#home{
+	background-attachment:fixed;
+	background-size:cover;
+	background-position: center;
+	height:100vh;
+}
+	header{
+	display: none;
+	}
+	#falsoheader{
+		display: none;
+	}
+	.logo2{
+		width: 40%;
+		margin: auto;
+		padding-top: 20px;
+	}
+	.logo2 img{
+		width: 100%
+	}
+	#navcel{
+	display: block;
+	position: absolute;
+	background-color: #333;
+	z-index: 101;
+	height:auto;
+	padding-bottom:40px;
+}
+#navcel li{
+	width: 50%;
+	margin-top: 20px;
+}
+#navcel .redes{
+	padding-top:30px;
+}
+#navcel .redes li{
+	padding-top:0;
+	width:	calc(100% /4);
+	height:30px;
+}
+#navcel .redes img{
+	width: 30px;
+	padding: 0;
+	margin-top:0;
 	margin:auto;
-	height:calc(100% - 140px);
-}
-.cortar{
-	clear:both;
+	padding-left: calc(50%-30px);
+	float:none;
+	
 }
 
-#falsoheader{
-	height:140px;
-
+.iconos{
+	width:50px;
+	
 }
-#fondoHeader{
-	width:100%;
+#rest2{
+	background-image:url(img/icrest.png);
+}
+#bici2{
+	background-image:url(img/icbici.png);
+}
+#bell2{
+	background-image:url(img/icbell.png);
+}
+#hote2{
+	background-image:url(img/ichotel.png);
+}
+#viaj2{
+	background-image:url(img/icviaj.png);
+}
+#otros2{
+	background-image:url(img/icreg.png);
+}
+nav li h3{
+	visibility:visible;
+}
+.btnnav{
+	display: block;
+	background-position:center;
+	background-size:80%;
+	background-repeat:no-repeat;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	z-index: 102;
+	top: 20px;
+	right: 20px;
+}
+#abrir{
+	background-image:url(img/menu.png);
+}
+#cerrar{
+	background-image:url(img/cruz.png);
+	background-size:70%;
+}
+.redes img{
+	width: calc(100% /8);
+	padding-right:calc((100% /8)/2);
+	padding-left:calc((100% /8)/2);
+	float:left;
+	margin:0;
 	position:static;
+	display:block;
+	visibility:visible;
+	opacity:1;
+	margin-top:40px;
 }
-header{
+
+#busqueda .logo{
+	width:60%;
+	float:none;
+	margin:auto;
+	height: auto;
+	padding: 0;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	}
+	#busqueda .logo img{
 	width:100%;
-	padding-bottom:10px;
+	}
+	#busqueda h1{
+		width: 200px;
+		margin: auto;
+		font-size:24px;
+	}
+	.botones p{
+		font-size:11px;
+	}
+	.mascel{
+	display: block;
+	float: none;
+	width: 70%;
+	margin: auto;
+	padding-top: 8%;
 }
-#carrito{
+	.flecha{
+	width: 20%;
+	float: left;
+	overflow: hidden;
+}
+.flecha img{
+	width: 90%;
+	position: relative;
+	-webkit-animation: flecha 2s infinite;
+	-moz-animation: flecha 2s infinite;
+    animation: flecha 2s infinite;
+}
+	.mascel p{
+	color: #FFF;
+	font-size: 13px;
+	float: right;
+	width: 60%;
+	line-height: 18px;
+}
+.ingreg{
+	width: 48%;
+	padding: 0;
+	margin: 1%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.ingreg p{
+	font-size: 14px;
+	text-align: center;
+	float: none;
+	width: 100%;
+	color: #0FF;
+	font-weight: 500;
+}
+.carritocomp{
+	width: 90%;
+	margin: auto;
+	padding-top: 20px;
+}
+.carritocomp p, .carritocomp h4, .carritocomp img{
+	float:left;
+	padding-left: 5px;
+	}
+	.carritocomp p{
+		font-size: 15px;
+		font-weight: 100;
+	}
+	.carritocomp h4{
+		font-size: 25px;
+		font-weight: 100;
+		margin-top: -10px;
+	}
+.contenedor h1{
 	margin-top:10px;
-	float:right;
+	font-size:26px;
+	padding:0;
+}
+.contenedor #finaliza{
+	font-size:16px;
+	padding:0;
+}
+
+.contenedor #finaliza strong{
+	font-size:18px;
+}
+
+.ofertadia{
+		width: 100%;
+		margin-top:10px;
+		padding-top:10px;
+		border-top: 2px solid #0FF;
+}
+#buscar{
+	height:35px;
 	width:100%;
+	float:none;
+	font-size:20px;
 }
-#carrito p, #carrito h4{
-	float:right;
-	color:#FFF;
+#lupa{
+	display: none;
 }
-#carrito p{
+.botones{
+	margin-top: 0;
+}
+
+footer nav{
+	display:none;
+}
+
+#textofooter{
+	padding-top:0px;
+	margin-top:0px;
+		padding-bottom:0px;
+		margin-bottom:0;
+}
+footer p{
 	font-size:11px;
-	font-weight:600;
+	width: calc(100% /2);
+	float:left;
+		margin-top:50px;
+		padding-bottom:0px;
+		margin-bottom:0;
 }
-#carrito h4{
-	font-size:25px;
-	font-weight:200;
+.redes{
+	width: 90%;
 }
-#carrito img{
-	width:25px;
-	float:right;
-	margin-right:10px;
+
+/***************** nav ************/
+
 }
-#logo{
-	width:100%;
-	margin-top:10px;
-}
-#logo img{
-	width:100%;
-}
-	 
-}
-*******/
