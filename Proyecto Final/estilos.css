@@ -61,6 +61,19 @@
 	-moz-transition: background-image 5s;
 	transition: background-image 5s;
 }
+#home2{
+	background-color:#333;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position: center;
+    -webkit-animation: fondo 15s infinite;
+	-moz-animation: fondo 15s infinite;
+    animation: fondo 15s infinite;
+	-webkit-transition: background-image 5s;
+	-moz-transition: background-image 5s;
+	transition: background-image 5s;
+	padding-bottom:40px;
+}
 .todo{
 	width:85%;
 	margin:auto;
@@ -616,7 +629,7 @@ footer p{
 .crearcuenta{
 	background-color: #111;
 	color: #0FF;
-	height: 80px;
+	height: 40%;
 	width: 40px;
 }
 .crearcuenta:hover{
@@ -661,6 +674,9 @@ footer p{
 		width: 50%;
 		margin-top:10px;
 		padding-top:10px;
+}
+.formregistro{
+	width:70%;
 }
 }
 
@@ -796,6 +812,15 @@ footer p{
 	visibility:visible;
 	opacity:1;
 	margin-top:40px;
+}
+.formregistro{
+	width:60%;
+}
+
+.formregistro li{
+	float:none;
+	width:100%;
+	margin-bottom:16px;
 }
 
 }
