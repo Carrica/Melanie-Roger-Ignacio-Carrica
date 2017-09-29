@@ -3,9 +3,20 @@
 // altoHeader = document.getElementById("header").style.height;
 //altoHeader= $("header").css("height");
 $(document).ready(function(){
-    
-           
-    
+  
+ 
+   $("#navcel").hide()
+    $("#cerrar").hide()
+    $("#abrir").click(function(){
+        $("#navcel").show();
+		$("#abrir").hide();
+		$("#cerrar").show();
+    });
+	$("#cerrar").click(function(){
+        $("#navcel").hide();
+		$("#abrir").show();
+		$("#cerrar").hide();
+    });
 });
 
 
