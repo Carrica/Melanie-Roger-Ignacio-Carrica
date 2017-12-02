@@ -43,6 +43,7 @@
 	padding:0;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 1pt;
+	text-decoration:none;  
 }
 
 /******************************-----------------INDEX---------------------***************************************/
@@ -54,6 +55,18 @@
 	background-size:cover;
 	background-position: center;
 	height:100vh;
+    -webkit-animation: fondo 15s infinite;
+	-moz-animation: fondo 15s infinite;
+    animation: fondo 15s infinite;
+	-webkit-transition: background-image 5s;
+	-moz-transition: background-image 5s;
+	transition: background-image 5s;
+}
+.home{
+	background-color:#333;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position: center;
     -webkit-animation: fondo 15s infinite;
 	-moz-animation: fondo 15s infinite;
     animation: fondo 15s infinite;
@@ -84,13 +97,14 @@
 }
 /*************header*****************/
 #falsoheader{
-	height:140px;
+	height:160px;
 
 }
 #fondoHeader{
 	width:100%;
 	position:fixed;
 	z-index: 100;
+	
 }
 header{
 	width:85%;
@@ -255,7 +269,7 @@ nav li:hover h3{
 	padding-left:5%;
 }
 #lupa{
-	background:#3330 url(img/lupahover.png);
+	background:#FFF url(img/lupahovergris.png);
 	background-size:contain;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -264,7 +278,7 @@ nav li:hover h3{
 	float:right;
 }
 #lupa:hover{
-	background:#3330 url(img/lupa.png);
+	background:#FFF url(img/lupa.png);
 	background-size:contain;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -358,6 +372,12 @@ nav li:hover h3{
 	margin-top:28px;
 	margin-right:15px;
 }
+.contenedor ul{
+	float: none;
+}
+.contenedor li{
+	float: left;
+}
 .ofertadia{
 		width: calc(100% /3);
 		float:left;
@@ -382,6 +402,18 @@ nav li:hover h3{
 	margin-top:10px;
 	color:#666;
 	font-size:16px;
+}
+.ofertadia h5{
+	text-align: center;
+	float: right;
+	margin:-5px;
+	color:#0FF;
+	font-size:22px;
+	width: 70px;
+	height: 70px;
+	background-color: #333;
+	border-radius: 50%;
+	line-height: 70px;
 }
 .ofertadia p{
 	width:95%;
@@ -1071,4 +1103,8 @@ footer p{
 
 /***************** nav ************/
 
+}
+
+.no{
+	display: none;
 }

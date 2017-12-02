@@ -1,0 +1,17 @@
+
+
+.laoferta{
+	background-color: red;
+}
+.foto1{
+	width: 45%;
+	height: 800px;
+	background-color: green;
+	float: left;
+}
+.descripcionLaOferta{
+	background-color: yellow;
+	width: 50%;
+	height: 200px;
+	float: right;
+}
