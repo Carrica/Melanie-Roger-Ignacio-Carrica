@@ -1,0 +1,24 @@
+<!-- __________________ Acá empieza el modal _________________________ -->
+    
+    
+    <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content" >
+            <span class="close">&times;</span>
+            <h2>Iniciar sesión</h2>
+            <form class="" name="registro" method="post">
+                <ul>
+                  <li><label for="email1">Correo electrónico:</label>
+                  <input type="email" name="email1" id="email1" value=""><span id="msgemail1"></span></li>
+                  <li><label for="contraseña1">Contraseña:</label>
+                  <input type="password" name="contraseña1" id="contraseña1" value=""><span id="msgcontraseña1"></span></li>
+                  <li class="check"><input type="checkbox" name="chk1" id="chk1" value="" ><label for="chk1">Recordar mi usuario.</label></li>
+                  <input type="submit" onclick="login()" name="submit" id="submit" class="crearcuenta" value="Iniciar sesión">
+                </ul>
+              </form>
+          </div>
+        
+        </div>
+
+PD: No olvidar llamar a los scripts y al css
