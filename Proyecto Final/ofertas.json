@@ -1,0 +1,35 @@
+{
+	"ofertas": [{
+			"id": 0,
+			"categoria": "viajes",
+			"titulo": "Viaje a Italia para dos personas",
+			"precio": "700",
+			"descripcion": "Italia Lorem Viaje a Italia para dos personas ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis.",
+			"descripcion2": "222 Viaje a Italia para dos personas Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis.",
+			"foto1": "italia",
+			"foto2": "italia",
+			"foto3": "italia",
+			"foto4": "italia",
+			"duracion": "24",
+			"restantes": "10",
+			"calificacion": "4",
+			"destacado": "si"
+		},
+		{
+			"id": 1,
+			"categoria": "restantes",
+			"titulo": "cena",
+			"precio": "700",
+			"descripcion": "Italia Lorem Viaje a Italia para dos personas ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis.",
+			"descripcion2": "222 Viaje a Italia para dos personas Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis.",
+			"foto1": "italia",
+			"foto2": "italia",
+			"foto3": "italia",
+			"foto4": "italia",
+			"duracion": "24",
+			"restantes": "10",
+			"calificacion": "4",
+			"destacado": "si"
+		}
+	]
+}
