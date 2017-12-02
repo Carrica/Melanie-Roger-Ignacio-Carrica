@@ -255,7 +255,7 @@ nav li:hover h3{
 	padding-left:5%;
 }
 #lupa{
-	background:#333 url(img/lupahover.png);
+	background:#3330 url(img/lupahover.png);
 	background-size:contain;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -264,7 +264,7 @@ nav li:hover h3{
 	float:right;
 }
 #lupa:hover{
-	background:#333 url(img/lupa.png);
+	background:#3330 url(img/lupa.png);
 	background-size:contain;
 	background-position:center;
 	background-repeat:no-repeat;
