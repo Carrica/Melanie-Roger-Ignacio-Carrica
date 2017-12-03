@@ -48,6 +48,11 @@
 
 /******************************-----------------INDEX---------------------***************************************/
 /******************************home***************************************/
+#boton{
+	background-color: rgb(221, 221, 221);
+	padding: 5px;
+	margin-top: 10px;
+}
 
 #home{
 	background-color:#333;
@@ -394,6 +399,7 @@ nav li:hover h3{
 		float:left;
 		margin-bottom:20px;
 		padding-top:10px;
+		height: 300px;
 }
 .ofertadia:hover{
 		background:#CAFFFF;
