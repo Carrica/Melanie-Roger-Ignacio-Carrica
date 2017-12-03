@@ -1,17 +1,88 @@
 
 
 .laoferta{
-	background-color: red;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .foto1{
 	width: 45%;
-	height: 800px;
-	background-color: green;
+	height: 400px;
+
 	float: left;
 }
 .descripcionLaOferta{
-	background-color: yellow;
 	width: 50%;
-	height: 200px;
 	float: right;
+}
+.laoferta .foto1{
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+.laoferta h1, h2, h3, h4, h5, p{
+	float: none;
+	line-height: auto;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+.laoferta h1{
+	font-size: 36px;
+	line-height: 40px;
+}
+.laoferta h2{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+	color: #666;
+}
+.laoferta h3{
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 600;
+	color: #333;
+}
+
+.laoferta h4{
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 600;
+	color: #333;
+}
+
+.laoferta h5{
+	font-size: 17px;
+	line-height: 45px;
+	font-weight: 600;
+	color: #666;
+	margin-top: 20px;
+}
+
+.laoferta h6{
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: 700;
+	color: #666;
+	text-align: right;
+}
+
+.laoferta p{
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 600;
+	color: #666;
+	text-align: right;
+}
+.comprar{
+	background-color: #0FF;
+	width: auto;
+	padding: 20px;
+	color: #666;
+	font-size: 15px;
+	font-weight: 900;
+	float: right;
+	margin-top: 30px;
 }
