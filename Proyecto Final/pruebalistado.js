@@ -57,6 +57,8 @@ function contar(){
 
 function soloviajes(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btnviaj").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
@@ -73,6 +75,8 @@ $( "#productos" ).empty();
 }
 function solohoteles(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btnhte").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
@@ -89,6 +93,8 @@ $( "#productos" ).empty();
 }
 function solorest(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btnres").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
@@ -105,6 +111,8 @@ $( "#productos" ).empty();
 }
 function soloestetica(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btnest").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
@@ -121,6 +129,8 @@ $( "#productos" ).empty();
 }
 function solotiempo(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btntim").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
@@ -136,6 +146,8 @@ $( "#productos" ).empty();
 }
 function solootros(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btnotros").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
@@ -152,6 +164,8 @@ $( "#productos" ).empty();
 
 function todo(){
 $( "#productos" ).empty();
+$(".seleccionar").css("background-color","#FFF");
+$("#btntodo").css("background-color","#A0FFFF");
   $.ajax({
       url: "http://localhost:3000/ofertas",
       contentType: "application/json",
