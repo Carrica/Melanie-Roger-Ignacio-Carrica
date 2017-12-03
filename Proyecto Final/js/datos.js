@@ -36,4 +36,13 @@ function guardarDatos(){
       alert("Email/Contraseña invalido")
   }
 
+  function logueado() {
+      if (localStorage.email != null){
+      var user = localStorage.email;
+      document.getElementById("datos").innerHTML = user;
+    }
+      else {
+          document.getElementById("datos").innerHTML = "";
+      }
+  }
  
