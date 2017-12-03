@@ -40,9 +40,18 @@ function guardarDatos(){
       if (localStorage.email != null){
       var user = localStorage.email;
       document.getElementById("datos").innerHTML = user;
+      document.getElementById("ingresar").innerHTML = "";
+      document.getElementById("registrarse").innerHTML = "";
+      document.getElementById("boton").innerHTML = "<button onclick="+"salir()"+">Salir</button>";
     }
       else {
           document.getElementById("datos").innerHTML = "";
+          document.getElementById("boton").innerHTML = "";
       }
   }
+
+  function salir() {
+    localStorage.clear();
+  }
+  
  
