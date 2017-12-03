@@ -14,6 +14,7 @@
 <script src="listadooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.js" type="text/javascript"></script> 
 <script src="pruebalistado.js" type="text/javascript"></script> 
 <script src="armarDetalle.js" type="text/javascript"></script> 
+<script src="js/datos.js" type="text/javascript"></script>
 </head>
 
 <body onload="logueado()">
@@ -57,11 +58,11 @@
     <div id="fondoHeader">  <!-- fondo color gris que se activa con el scroll con js -->
 		  <header>
           <div class="carritocomp">
-            <a href="ingresar.html" class="ingreg"><p>Ingresar</p></a>
-            <a href="registro.html" class="ingreg"><p>Registrar</p></a>
-            <a href="carrito.html">
-              <p>Chart</p><br><h4>00</h4><img src="img/carrito.png">
-            </a>
+              <a href="" class="ingreg" id="boton"><button onclick="salir()">Salir</button></a>
+              <a href="ingresar.html" class="ingreg"><p id="ingresar">Ingresar</p></a>
+              <a href="registro.html" class="ingreg"><p id="registrarse">Registrar</p></a>
+              <a href="" class="ingreg"><p id="datos"></p></a>
+              <a href="carrito.html"><p>Chart</p><br><h4>00</h4><img src="img/carrito.png"></a>
           </div>
           <nav>
         		<ul>
