@@ -5,7 +5,7 @@ para cumplir todas las necesidades del consumidor al
 mantener una interfáz y una estética dinámica y agradable
 y al mismo una alta funcionalidad técnica.
 Todos sabemos que no hay nada mejor que vivir experiencias 
-increíbles que podamos vivir con nuestros amigos, familia o pareja, 
+increíbles que podamos disfrutar con nuestros amigos, familia o pareja, 
 y mejor aún, compartirlas con el mundo entero a través del mundo digital, 
 por eso en Opa! te ofrecemos varadas ofertas únicas para que cumplas tus sueños 
 y generes memorias maravillosa para el resto de la vida. 
